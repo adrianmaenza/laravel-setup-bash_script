@@ -11,6 +11,6 @@ if [ -d public_html ]; then
   rm -rf public_html
 fi
 
-mv blog/* . # move all the contents of the blog folder to current dir
+cp -r blog/* . # copy all the contents of the blog folder to current dir
 rm -rf blog # delete the blog folder
 mv public public_html # rename public_html to public
